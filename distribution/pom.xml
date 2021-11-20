@@ -39,7 +39,7 @@ LICENSE file.
       <artifactId>core</artifactId>
       <version>${project.version}</version>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>site.ycsb</groupId>
       <artifactId>accumulo1.9-binding</artifactId>
       <version>${project.version}</version>
@@ -263,6 +263,11 @@ LICENSE file.
       <groupId>site.ycsb</groupId>
       <artifactId>zookeeper-binding</artifactId>
       <version>${project.version}</version>
+    </dependency> -->
+    <dependency>
+      <groupId>site.ycsb</groupId>
+      <artifactId>ziplog-binding</artifactId>
+      <version>${project.version}</version>
     </dependency>
 
   </dependencies>
@@ -301,4 +306,3 @@ LICENSE file.
   </profiles>
 
 </project>
-

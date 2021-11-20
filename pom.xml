@@ -111,7 +111,7 @@ LICENSE file.
     <maven.dependency.version>2.10</maven.dependency.version>
 
     <!-- datastore binding versions, lex sorted -->
-    <accumulo.1.9.version>1.9.3</accumulo.1.9.version>
+    <!-- <accumulo.1.9.version>1.9.3</accumulo.1.9.version>
     <aerospike.version>3.1.2</aerospike.version>
     <arangodb.version>4.4.1</arangodb.version>
     <asynchbase.version>1.8.2</asynchbase.version>
@@ -149,7 +149,8 @@ LICENSE file.
     <thrift.version>0.8.0</thrift.version>
     <tablestore.version>4.8.0</tablestore.version>
     <voltdb.version>10.1.1</voltdb.version>
-    <zookeeper.version>3.5.8</zookeeper.version>
+    <zookeeper.version>3.5.8</zookeeper.version> -->
+    <ziplog.verion>0.0.1</ziplog.verion>
   </properties>
 
   <modules>
@@ -158,9 +159,9 @@ LICENSE file.
     <module>binding-parent</module>
     <module>distribution</module>
     <!-- all the datastore bindings, lex sorted please -->
-    <module>accumulo1.9</module>
-    <module>aerospike</module>
-    <module>arangodb</module>
+    <!-- <module>accumulo1.9</module>
+    <module>aerospike</module> -->
+    <!-- <module>arangodb</module>
     <module>asynchbase</module>
     <module>azurecosmos</module>
     <module>azuretablestorage</module>
@@ -201,8 +202,9 @@ LICENSE file.
     <module>solr7</module>
     <module>tarantool</module>
     <module>tablestore</module>
-    <module>voltdb</module>
-    <module>zookeeper</module>
+    <module>voltdb</module> -->
+    <module>ziplog</module>
+    <!-- <module>zookeeper</module> -->
   </modules>
 
   <build>
@@ -249,7 +251,7 @@ LICENSE file.
           <target>1.8</target>
         </configuration>
       </plugin>
-      <plugin>
+      <!-- <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <executions>
@@ -264,7 +266,7 @@ LICENSE file.
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin> -->
     </plugins>
   </build>
   <profiles>
