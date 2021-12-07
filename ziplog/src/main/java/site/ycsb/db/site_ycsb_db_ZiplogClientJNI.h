@@ -9,6 +9,14 @@ extern "C" {
 #endif
 /*
  * Class:     site_ycsb_db_ZiplogClientJNI
+ * Method:    ziplogClientInit
+ * Signature: (Ljava/lang/String;III)V
+ */
+JNIEXPORT void JNICALL Java_site_ycsb_db_ZiplogClientJNI_ziplogClientInit
+  (JNIEnv *, jobject, jstring, jint, jint, jint);
+
+/*
+ * Class:     site_ycsb_db_ZiplogClientJNI
  * Method:    get
  * Signature: (Ljava/lang/String;)Ljava/lang/String;
  */
